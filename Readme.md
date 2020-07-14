@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юрий Фролов](https://up.htmlacademy.ru/adaptive/20/user/1209581).
-* Наставник: [Анастасия Полозова](https://htmlacademy.ru/profile/id258631).
+* Наставник: [Анастасия Полозова](https://up.htmlacademy.ru/adaptive/20/user/258631).
 
 ---
 
