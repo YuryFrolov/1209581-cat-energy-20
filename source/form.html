@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кэт энерджи: подбор программы</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img src="https://via.placeholder.com/200x37" class="header__logo-image" alt="«Кэт Энерджи»">
+    </a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог продукции</a></li>
+        <li class="nav__item"><a class="nav__link">Подбор программы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="select-program">
+      <form action="https://echo.htmlacademy.ru" class="select-program__form">
+
+        <fieldset class="select-program__parameters">
+          <h1 class="select-program__title">Подбор программы</h1>
+          <p class="select-program__description">Заполните анкету и мы подберём программу питания для вашего кота</p>
+          <div class="select-program__parameters-wrap">
+            <label for="name" class="select-program__name-label">Имя:*</label>
+            <input type="text" class="select-program__name-input" id="name" placeholder="Барсик" required>
+
+            <label for="weight" class="select-program__weight-label">Вес (кг):*</label>
+            <input type="text" class="select-program__weight-input" id="weight" placeholder="7" required>
+
+            <label for="age" class="select-program__age-label">Возраст (лет):</label>
+            <input type="text" class="select-program__age-input" id="age" placeholder="7" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="select-program__category">
+          <div class="select-program__slim-wrap">
+            <input type="radio" class="select-program__slim" name="program" id="slim-program">
+            <label for="slim-program" class="select-program__slim-label">Похудение</label>
+          </div>
+          <div class="select-program__weight-wrap">
+            <input type="radio" class="select-program__weight" name="program" id="weight-program">
+            <label for="weight-program" class="select-program__pro-label">Набор массы</label>
+          </div>
+          <div class="select-program__advice-wrap">
+            <input type="radio" class="select-program__advice" name="program" id="advice-program">
+            <label for="advice-program" class="select-program__advice-label">Не знаю (нужен ваш совет)</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="select-program__contacts">
+          <h2 class="select-program__contacts-title">Контактные данные (владельца кота)</h2>
+          <div class="select-program__contacts-wrap">
+            <label for="email" class="select-program__email-label">E-mail:*</label>
+            <input type="text" id="email" class="select-program__email-input" placeholder="kuklachev@gmail.com"
+              required>
+
+            <label for="phone" class="select-program__phone-label">Телефон:*</label>
+            <input type="text" id="phone" class="select-program__phone-input" placeholder="8 (960) 900-60-90" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="select-program__comment">
+          <h2 class="select-program__comment-title">Комментарий</h2>
+          <textarea class="select-program__comment-textarea" name="comment" cols="30" rows="10"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+
+        <fieldset class="select-program__extra">
+          <h2 class="select-program__extra-title">Дополнительно</h2>
+          <div class="select-program__sweetener-wrap">
+            <input class="select-program__sweetener" type="checkbox" id="sweetener">
+            <label class="select-program__sweetener-label" for="sweetener">Сахарозаменитель</label>
+          </div>
+          <div class="select-program__drinking-water-wrap">
+            <input class="select-program__drinking-water" type="checkbox" id="drinking-water">
+            <label class="select-program__drinking-water-label" for="drinking-water">Питьевая вода</label>
+          </div>
+          <div class="select-program__milk-wrap">
+            <input class="select-program__milk" type="checkbox" id="milk">
+            <label class="select-program__milk-label" for="milk">Молоко</label>
+          </div>
+          <div class="select-program__vitamins-wrap">
+            <input class="select-program__vitamins" type="checkbox" id="vitamins">
+            <label class="select-program__vitamins-label" for="vitamins">Витамины</label>
+          </div>
+          <input class="select-program__order" type="submit" value="Отправить заявку">
+          <p class="select-program__small-text"><sup>*</sup> — Обязательные поля</p>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="contacts">
+      <h2 class="contacts__title visually-hidden">Контакты</h2>
+      <div class="contacts__wrap">
+        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <img src="https://via.placeholder.com/320x362" class="contacts__map" alt="">
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a class="footer__logo">
+      <img class="footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24"
+        alt="«Кэт Энерджи»">
+    </a>
+
+    <ul class="social-links">
+      <li class="social-links__item">
+        <a href="#" class="social-links__link"><img src="https://via.placeholder.com/20x20" width="20" height="20"
+            alt="Вконтакте"></a>
+      </li>
+      <li class="social-links__item">
+        <a href="#" class="social-links__link"><img src="https://via.placeholder.com/20x20" width="20" height="20"
+            alt="Инстаграм"></a>
+      </li>
+      <li class="social-links__item">
+        <a href="#" class="social-links__link"><img src="https://via.placeholder.com/20x20" width="20" height="20"
+            alt="Фейсбук"></a>
+      </li>
+    </ul>
+
+    <section class="developers">
+      <h2 class="developers__title visually-hidden">Разработчики</h2>
+      <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="developers__name">HTML Academy</span>
+        <img class="developers__logo" src="https://via.placeholder.com/27x34" width="27" height="34"
+          alt="логотип HTML Academy">
+      </a>
+    </section>
+  </footer>
+
+</body>
+
+</html>
