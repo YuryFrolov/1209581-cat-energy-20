@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -19,83 +19,84 @@
         <li class="nav__item"><a class="nav__link">Подбор программы</a></li>
       </ul>
     </nav>
+    <button class="header__hamburger">
+    </button>
   </header>
 
   <main class="main">
-    <section class="select-program">
-      <form action="https://echo.htmlacademy.ru" class="select-program__form">
+    <form action="https://echo.htmlacademy.ru" class="form">
+      <h1 class="form__title">Подбор программы</h1>
+      <p class="form__description">Заполните анкету и мы подберём программу питания для вашего кота</p>
+      <fieldset class="form__fieldset">
+        <div class="form__group">
+          <label for="name" class="form__label">Имя:*</label>
+          <input type="text" class="form__field" id="name" placeholder="Барсик" required>
+        </div>
+        <div class="form__group">
+          <label for="weight" class="form__label">Вес (кг):*</label>
+          <input type="text" class="form__field" id="weight" placeholder="7" required>
+        </div>
+        <div class="form__group">
+          <label for="age" class="form__label">Возраст (лет):</label>
+          <input type="text" class="form__field" id="age" placeholder="7" required>
+        </div>
+      </fieldset>
 
-        <fieldset class="select-program__parameters">
-          <h1 class="select-program__title">Подбор программы</h1>
-          <p class="select-program__description">Заполните анкету и мы подберём программу питания для вашего кота</p>
-          <div class="select-program__parameters-wrap">
-            <label for="name" class="select-program__name-label">Имя:*</label>
-            <input type="text" class="select-program__name-input" id="name" placeholder="Барсик" required>
+      <fieldset class="form__fieldset">
+        <div class="form__group">
+          <input type="radio" class="form__radio" name="program" id="slim-program">
+          <label for="slim-program" class="form__label">Похудение</label>
+        </div>
+        <div class="form__group">
+          <input type="radio" class="form__radio" name="program" id="weight-program">
+          <label for="weight-program" class="form__label">Набор массы</label>
+        </div>
+        <div class="form__group">
+          <input type="radio" class="form__radio" name="program" id="advice-program">
+          <label for="advice-program" class="form__label">Не знаю (нужен ваш совет)</label>
+        </div>
+      </fieldset>
 
-            <label for="weight" class="select-program__weight-label">Вес (кг):*</label>
-            <input type="text" class="select-program__weight-input" id="weight" placeholder="7" required>
+      <fieldset class="form__fieldset">
+        <h2 class="form__fieldset-title">Контактные данные (владельца кота)</h2>
+        <div class="form__group">
+          <label for="email" class="form__label">E-mail:*</label>
+          <input type="text" id="email" class="form__field" placeholder="kuklachev@gmail.com" required>
+        </div>
+        <div class="form__group">
+          <label for="phone" class="form__field">Телефон:*</label>
+          <input type="text" id="phone" class="form__field" placeholder="8 (960) 900-60-90" required>
+        </div>
+      </fieldset>
 
-            <label for="age" class="select-program__age-label">Возраст (лет):</label>
-            <input type="text" class="select-program__age-input" id="age" placeholder="7" required>
-          </div>
-        </fieldset>
+      <fieldset class="form__fieldset">
+        <label class="form__label">Комментарий</label>
+        <textarea class="form__fieldset" name="comment" cols="30" rows="10"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
+      </fieldset>
 
-        <fieldset class="select-program__category">
-          <div class="select-program__slim-wrap">
-            <input type="radio" class="select-program__slim" name="program" id="slim-program">
-            <label for="slim-program" class="select-program__slim-label">Похудение</label>
-          </div>
-          <div class="select-program__weight-wrap">
-            <input type="radio" class="select-program__weight" name="program" id="weight-program">
-            <label for="weight-program" class="select-program__pro-label">Набор массы</label>
-          </div>
-          <div class="select-program__advice-wrap">
-            <input type="radio" class="select-program__advice" name="program" id="advice-program">
-            <label for="advice-program" class="select-program__advice-label">Не знаю (нужен ваш совет)</label>
-          </div>
-        </fieldset>
-
-        <fieldset class="select-program__contacts">
-          <h2 class="select-program__contacts-title">Контактные данные (владельца кота)</h2>
-          <div class="select-program__contacts-wrap">
-            <label for="email" class="select-program__email-label">E-mail:*</label>
-            <input type="text" id="email" class="select-program__email-input" placeholder="kuklachev@gmail.com"
-              required>
-
-            <label for="phone" class="select-program__phone-label">Телефон:*</label>
-            <input type="text" id="phone" class="select-program__phone-input" placeholder="8 (960) 900-60-90" required>
-          </div>
-        </fieldset>
-
-        <fieldset class="select-program__comment">
-          <h2 class="select-program__comment-title">Комментарий</h2>
-          <textarea class="select-program__comment-textarea" name="comment" cols="30" rows="10"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-
-        <fieldset class="select-program__extra">
-          <h2 class="select-program__extra-title">Дополнительно</h2>
-          <div class="select-program__sweetener-wrap">
-            <input class="select-program__sweetener" type="checkbox" id="sweetener">
-            <label class="select-program__sweetener-label" for="sweetener">Сахарозаменитель</label>
-          </div>
-          <div class="select-program__drinking-water-wrap">
-            <input class="select-program__drinking-water" type="checkbox" id="drinking-water">
-            <label class="select-program__drinking-water-label" for="drinking-water">Питьевая вода</label>
-          </div>
-          <div class="select-program__milk-wrap">
-            <input class="select-program__milk" type="checkbox" id="milk">
-            <label class="select-program__milk-label" for="milk">Молоко</label>
-          </div>
-          <div class="select-program__vitamins-wrap">
-            <input class="select-program__vitamins" type="checkbox" id="vitamins">
-            <label class="select-program__vitamins-label" for="vitamins">Витамины</label>
-          </div>
-          <input class="select-program__order" type="submit" value="Отправить заявку">
-          <p class="select-program__small-text"><sup>*</sup> — Обязательные поля</p>
-        </fieldset>
-      </form>
-    </section>
+      <fieldset class="form__fieldset">
+        <h2 class="form__fieldset-title">Дополнительно</h2>
+        <div class="form__group">
+          <input class="form__checkbox" type="checkbox" id="sweetener">
+          <label class="form__label" for="sweetener">Сахарозаменитель</label>
+        </div>
+        <div class="form__group">
+          <input class="form__checkbox" type="checkbox" id="drinking-water">
+          <label class="form__label" for="drinking-water">Питьевая вода</label>
+        </div>
+        <div class="form__group">
+          <input class="form__checkbox" type="checkbox" id="milk">
+          <label class="form__label" for="milk">Молоко</label>
+        </div>
+        <div class="form__group">
+          <input class="form__checkbox" type="checkbox" id="vitamins">
+          <label class="form__label" for="vitamins">Витамины</label>
+        </div>
+        <input class="form__submit btn" type="submit" value="Отправить заявку">
+        <p class="form__small-text"><sup>*</sup> — Обязательные поля</p>
+      </fieldset>
+    </form>
 
     <section class="contacts">
       <h2 class="contacts__title visually-hidden">Контакты</h2>
