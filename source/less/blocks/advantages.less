@@ -11,7 +11,8 @@
 .advantages__title {
   margin: 0;
   margin-bottom: 38px;
-  .title-font();
+  font-family: @oswald;
+  font-weight: 400;
   font-size: 36px;
 }
 
@@ -22,10 +23,10 @@
 .advantages__item {
   display: flex;
   align-items: center;
-}
 
-.advantages__item:not(:last-of-type) {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .advantages__item-icon {
@@ -36,7 +37,8 @@
 
 .advantages__item-description {
   margin: 0;
-  .paragraph-font();
+  font-family: @arial;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
