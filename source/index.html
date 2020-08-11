@@ -5,13 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img src="https://via.placeholder.com/200x37" class="header__logo-image" alt="«Кэт Энерджи»">
-    </a>
+    <div class="header-wrapper">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo-mobile.svg" class="header__logo-image" width="191" alt="«Кэт Энерджи»">
+      </a>
+      <button type="button" class="header__toggle-nav-btn">
+        <span class="visually-hidden">Переключить меню</span>
+        <img src="img/icon-close.svg" width="18" class="header__toggle-icon" alt="">
+      </button>
+    </div>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a class="nav__link">Главная</a></li>
@@ -19,22 +26,17 @@
         <li class="nav__item"><a href="form.html" class="nav__link">Подбор программы</a></li>
       </ul>
     </nav>
-    <button type="button" class="header__toggle-nav-btn">
-      <span class="visuallyhidden">Переключить меню</span>
-    </button>
   </header>
 
   <main class="main">
     <h1 class="visually-hidden">Интернет-магазин «Кэт Энерджи»</h1>
 
     <header class="cta">
-      <div class="cta__wrap">
-        <h2 class="cta__title">Функциональное питание для котов</h2>
-        <p class="cta__slogan">Занялся собой? Займись котом!</p>
-        <img class="cta__product-image" src="https://via.placeholder.com/280x270" width="280" height="270"
-          alt="Кошачий корм «Кэт Энерджи»">
-        <a class="cta__link btn" href="select-program.html">Подобрать программу</a>
-      </div>
+      <h2 class="cta__title">Функциональное питание для котов</h2>
+      <p class="cta__slogan">Занялся собой? Займись котом!</p>
+      <img class="cta__product-image" src="img/index-can-mobile@1x.png" width="280" height="270"
+        alt="Кошачий корм «Кэт Энерджи»">
+      <a class="cta__link btn" href="select-program.html">Подобрать программу</a>
     </header>
 
     <ul class="categories">
@@ -43,8 +45,8 @@
         <p class="categories__item-description">Ваш кот весит больше собаки и почти утратил способность лазить по
           деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a href="catalog.html#slim" class="categories__item-link">
-          Каталог slim
-            <img src="#" width="24" height="30" alt="">
+          <span class="item-link__text">Каталог slim</span>
+          <img src="img/icon-right-arrow-long.svg" width="24" height="30" alt="">
         </a>
       </li>
       <li class="categories__item">
@@ -52,8 +54,8 @@
         <p class="categories__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
           Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a href="catalog.html#pro" class="categories__item-link">
-          Каталог pro
-            <img src="#" width="24" height="30" alt="">
+          <span class="item-link__text">Каталог pro</span>
+          <img src="img/icon-right-arrow-long.svg" width="24" alt="">
         </a>
       </li>
     </ul>
@@ -62,23 +64,23 @@
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
-          <img src="https://via.placeholder.com/60x60" class="advantages__item-icon" alt="">
+          <img src="img/advantage-leaf@1x.png" class="advantages__item-icon" alt="">
           <p class="advantages__item-description">Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
         <li class="advantages__item">
-          <img src="https://via.placeholder.com/60x60" class="advantages__item-icon" alt="">
+          <img src="img/advantage-powder@1x.png" class="advantages__item-icon" alt="">
           <p class="advantages__item-description">Выпускается в виде порошка, который нужно лишь залить кипятком и
             готово.
           </p>
         </li>
         <li class="advantages__item">
-          <img src="https://via.placeholder.com/60x60" class="advantages__item-icon" alt="">
+          <img src="img/advantage-dining@1x.png" class="advantages__item-icon" alt="">
           <p class="advantages__item-description">Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
         <li class="advantages__item">
-          <img src="https://via.placeholder.com/60x60" class="advantages__item-icon" alt="">
+          <img src="img/advantage-clock@1x.png" class="advantages__item-icon" alt="">
           <p class="advantages__item-description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </p>
         </li>
@@ -90,13 +92,15 @@
       <p class="proofs__history">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
         в день. </p>
-      <div class="proofs__numbers">
-        <span class="proofs__number">5 кг</span>
-        <span class="proofs__description">снижение веса</span>
-      </div>
-      <div class="proofs__numbers">
-        <span class="proofs__number">60 дней</span>
-        <span class="proofs__description">затрачено времени</span>
+      <div class="proofs__wrap">
+        <div class="proofs__numbers">
+          <span class="proofs__number">5 кг</span>
+          <span class="proofs__description">снижение веса</span>
+        </div>
+        <div class="proofs__numbers">
+          <span class="proofs__number">60 дней</span>
+          <span class="proofs__description">затрачено времени</span>
+        </div>
       </div>
       <div class="proofs__result">Затраты на питание: 15 000 руб.</div>
     </section>
@@ -104,10 +108,8 @@
     <section class="result">
       <h2 class="result__title visually-hidden">Результат</h2>
       <div class="result__image-wrap">
-        <img class="result__image result__image--before" src="https://via.placeholder.com/251x240"
-          alt="Кот до похудения">
-        <img class="result__image result__image--after" src="https://via.placeholder.com/251x240"
-          alt="Кот после похудения">
+        <img class="result__image result__image--before" src="img/before-mobile@1x.png" alt="Кот до похудения">
+        <img class="result__image result__image--after" src="img/after-mobile@1x.png" alt="Кот после похудения">
       </div>
       <div class="result__buttons-wrap">
         <button type="button" class="result__button">Было</button>
@@ -119,32 +121,30 @@
     </section>
 
     <section class="contacts">
-      <h2 class="contacts__title visually-hidden">Контакты</h2>
-      <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <img src="https://via.placeholder.com/320x362" class="contacts__map" alt="">
+      <div class="contacts-wrapper">
+        <h2 class="contacts__title visually-hidden">Контакты</h2>
+        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <img src="img/bg-map-mobile@1x.png" class="contacts__map" alt="">
     </section>
 
   </main>
 
   <footer class="footer">
     <a class="footer__logo">
-      <img class="footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24"
-        alt="«Кэт Энерджи»">
+      <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="«Кэт Энерджи»">
     </a>
 
     <ul class="social-links">
       <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="https://via.placeholder.com/20x20" width="20" height="20"
-            alt="Вконтакте"></a>
+        <a href="#" class="social-links__link"><img src="img/icon-vk.svg" width="20" height="20" alt="Вконтакте"></a>
       </li>
       <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="https://via.placeholder.com/20x20" width="20" height="20"
-            alt="Инстаграм"></a>
+        <a href="#" class="social-links__link"><img src="img/icon-insta.svg" width="20" height="20" alt="Инстаграм"></a>
       </li>
       <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="https://via.placeholder.com/20x20" width="20" height="20"
-            alt="Фейсбук"></a>
+        <a href="#" class="social-links__link"><img src="img/icon-fb.svg" width="20" height="20" alt="Фейсбук"></a>
       </li>
     </ul>
 
@@ -152,8 +152,7 @@
       <h2 class="developers__title visually-hidden">Разработчики</h2>
       <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="developers__name">HTML Academy</span>
-        <img class="developers__logo" src="https://via.placeholder.com/27x34" width="27" height="34"
-          alt="логотип HTML Academy">
+        <img class="developers__logo" src="img/htmlacademy.svg" width="27" height="34" alt="логотип HTML Academy">
       </a>
     </section>
   </footer>

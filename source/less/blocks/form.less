@@ -1,0 +1,98 @@
+.form__fieldset {
+  border: none;
+  padding: 20px;
+}
+
+.form__fieldset:not(:last-of-type) {
+  border-bottom: @gray-border;
+}
+
+.form__title {
+  font-family: @oswald;
+  font-size: 36px;
+  line-height: (36 / 36);
+  font-weight: 400;
+  color: #000000;
+  margin-top: 0;
+}
+
+.form__fieldset-title {
+  display: block;
+  font-family: @oswald;
+  font-size: 24px;
+  line-height: (26 / 24);
+  font-weight: 400;
+  margin-top: 0;
+}
+
+/* .form__fieldset:nth-of-type(1) .form__group,
+.form__fieldset:nth-of-type(3) .form__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+.form__group {
+  &--space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &:not(:nth-of-type(3)) {
+    margin-bottom: 13px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__description {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-family: @oswald;
+  font-size: 14px;
+  line-height: (18 / 14);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.form__label {
+  font-family: @oswald;
+  font-size: 16px;
+  line-height: (18 / 16);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.form__field {
+  padding: 15px;
+  border: 1px solid #e7e7e7;
+  font-family: @oswald;
+  font-size: 16px;
+  line-height: (18 / 16);
+  font-weight: 400;
+  color: @special_dark-gray;
+  text-transform: uppercase;
+}
+
+.textarea-block {
+  display: block;
+  width: 100%;
+}
+
+.form__checkbox {
+  margin-right: 18px;
+}
+
+.form__submit {
+  margin-bottom: 20px;
+}
+
+.form__small-text {
+  font-family: @arial;
+  font-size: 14px;
+  line-height: (16 / 14);
+  font-weight: 400;
+  text-align: center;
+}

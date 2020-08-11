@@ -1,0 +1,82 @@
+.extra {
+  padding: 20px;
+}
+
+
+.extra__title {
+  font-family: @oswald;
+  font-size: 24px;
+  line-height: (24 / 24);
+  font-weight: 400;
+  color: #000000;
+}
+
+.extra__list {
+  .list-normalize();
+  margin-bottom: 39px;
+}
+
+.extra__item {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-top: @gray-border;
+}
+
+.extra__item:last-child {
+  border-bottom: @gray-border;
+}
+
+.extra__name {
+  margin-top: 0;
+  font-family: @oswald;
+  font-size: 16px;
+  line-height: (16 / 16);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.extra__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.extra__properties {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.extra__property {
+  width: 50%;
+  color: @special_dark-gray;
+  font-size: 14px;
+  line-height: (14 / 14);
+}
+
+.extra__property:nth-child(even) {
+  text-align: right;
+}
+
+.extra__gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  height: 289px;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+}
+
+.extra__gift-logo {
+  margin-top: 65px;
+  width: 55px;
+}
+
+.extra__gift-description {
+  margin-top: 0;
+  margin-bottom: 42px;
+  width: 55%;
+  font-size: 16px;
+  line-height: (20 / 16);
+  color: @light;
+  text-align: center;
+}
