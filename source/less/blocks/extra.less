@@ -2,7 +2,6 @@
   padding: 20px;
 }
 
-
 .extra__title {
   font-family: @oswald;
   font-size: 24px;
@@ -56,6 +55,10 @@
   text-align: right;
 }
 
+.extra__order {
+  width: 100%;
+}
+
 .extra__gift {
   display: flex;
   flex-direction: column;
@@ -79,4 +82,122 @@
   line-height: (20 / 16);
   color: @light;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .extra {
+    padding: 30px;
+  }
+
+  .extra__list {
+    border: @gray-border;
+  }
+
+  .extra__item {
+    padding: 38px;
+  }
+
+  .extra__item:first-child {
+    border-top: none;
+  }
+
+  .extra__item:last-child {
+    border-bottom: none;
+  }
+
+  .extra__item-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .extra__name {
+    margin-right: auto;
+  }
+
+  .extra__title {
+    font-size: 36px;
+    line-height: (36 / 36);
+  }
+
+  .extra__link {
+    font-size: 20px;
+    line-height: (20 / 20);
+  }
+
+  .extra__properties {
+    display: block;
+  }
+
+  .extra__property {
+    font-size: 16px;
+    line-height: (14 / 16);
+  }
+
+  .extra__gift {
+    width: 100%;
+    height: 200px;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-size: cover;
+  }
+
+  .extra__gift-logo {
+    margin-top: 0;
+    margin-left: 78px;
+    margin-right: 265px;
+  }
+
+  .extra__gift-description {
+    margin: 0;
+    line-height: (20 / 16);
+    max-width: 160px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .extra {
+    padding-left: 110px;
+    padding-right: 110px;
+    display: flex;
+  }
+  
+  .extra__list {
+    border: none;
+    margin-right: 80px;
+  }
+
+  .extra__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px 0;
+  }
+
+  .extra__item:first-child {
+    border-top: @gray-border;
+  }
+
+  .extra__item:last-child {
+    border-bottom: @gray-border;
+  }
+
+  .extra__item-header {
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 40px;
+  }
+
+  .extra__name {
+    margin: 0;
+  }
+
+  .extra__properties {
+    margin: 0;
+  }
+
+  .extra__order {
+    width: 244px;
+  }
 }

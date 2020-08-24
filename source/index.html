@@ -36,7 +36,7 @@
       <p class="cta__slogan">Занялся собой? Займись котом!</p>
       <img class="cta__product-image" src="img/index-can-mobile@1x.png" width="280" height="270"
         alt="Кошачий корм «Кэт Энерджи»">
-      <a class="cta__link btn" href="select-program.html">Подобрать программу</a>
+      <a class="cta__link btn cta__link-btn" href="form.html">Подобрать программу</a>
     </header>
 
     <ul class="categories">
@@ -64,23 +64,31 @@
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages__item">
-          <img src="img/advantage-leaf@1x.png" class="advantages__item-icon" alt="">
+          <div class="advantages__item__square">
+            <img src="img/advantage-leaf@1x.png" class="advantages__item-icon" alt="">
+          </div>
           <p class="advantages__item-description">Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
         <li class="advantages__item">
-          <img src="img/advantage-powder@1x.png" class="advantages__item-icon" alt="">
+          <div class="advantages__item__square">
+            <img src="img/advantage-powder@1x.png" class="advantages__item-icon" alt="">
+          </div>
           <p class="advantages__item-description">Выпускается в виде порошка, который нужно лишь залить кипятком и
             готово.
           </p>
         </li>
         <li class="advantages__item">
-          <img src="img/advantage-dining@1x.png" class="advantages__item-icon" alt="">
+          <div class="advantages__item__square">
+            <img src="img/advantage-dining@1x.png" class="advantages__item-icon" alt="">
+          </div>
           <p class="advantages__item-description">Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
         <li class="advantages__item">
-          <img src="img/advantage-clock@1x.png" class="advantages__item-icon" alt="">
+          <div class="advantages__item__square">
+            <img src="img/advantage-clock@1x.png" class="advantages__item-icon" alt="">
+          </div>
           <p class="advantages__item-description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </p>
         </li>
@@ -101,8 +109,11 @@
           <span class="proofs__number">60 дней</span>
           <span class="proofs__description">затрачено времени</span>
         </div>
+        <div class="proofs__result">
+          <span class="proofs__result-description">Затраты на питание:</span>
+          <span class="proofs__result-price"> 15 000 руб.</span>
+        </div>
       </div>
-      <div class="proofs__result">Затраты на питание: 15 000 руб.</div>
     </section>
 
     <section class="result">
@@ -124,7 +135,10 @@
       <div class="contacts-wrapper">
         <h2 class="contacts__title visually-hidden">Контакты</h2>
         <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts-address-wrapper">
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8</address>
+          <p class="contacts__city">Санкт-Петербург</p>
+        </div>
       </div>
       <img src="img/bg-map-mobile@1x.png" class="contacts__map" alt="">
     </section>
@@ -132,21 +146,30 @@
   </main>
 
   <footer class="footer">
+
     <a class="footer__logo">
       <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="«Кэт Энерджи»">
     </a>
 
-    <ul class="social-links">
-      <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="img/icon-vk.svg" width="20" height="20" alt="Вконтакте"></a>
-      </li>
-      <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="img/icon-insta.svg" width="20" height="20" alt="Инстаграм"></a>
-      </li>
-      <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="img/icon-fb.svg" width="20" height="20" alt="Фейсбук"></a>
-      </li>
-    </ul>
+    <div class="social-links__wrap">
+      <ul class="social-links__list">
+        <li class="social-links__item">
+          <a href="#" class="social-links__link">
+            <img class="social-links__img" src="img/icon-vk.svg" width="20" height="20" alt="Вконтакте">
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a href="#" class="social-links__link">
+            <img class="social-links__img" src="img/icon-insta.svg" width="20" height="20" alt="Инстаграм">
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a href="#" class="social-links__link">
+            <img class="social-links__img" src="img/icon-fb.svg" width="20" height="20" alt="Фейсбук">
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <section class="developers">
       <h2 class="developers__title visually-hidden">Разработчики</h2>
@@ -155,6 +178,7 @@
         <img class="developers__logo" src="img/htmlacademy.svg" width="27" height="34" alt="логотип HTML Academy">
       </a>
     </section>
+
   </footer>
 
 </body>

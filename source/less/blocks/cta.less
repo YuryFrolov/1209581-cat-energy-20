@@ -32,3 +32,53 @@
 .cta__link {
   text-decoration: none;
 }
+
+@media (min-width: 768px) {
+  .cta {
+    position: relative;
+    align-items: flex-start;
+    padding: 0;
+    margin-bottom: 0;
+    background: none;
+    min-height: 810px;
+  }
+
+  .cta::after {
+    content: url("../../img/index-can-tablet@1x.jpg");
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+  }
+
+  .cta__title {
+    width: 414px;
+    color: #000000;
+    font-size: 60px;
+    line-height: (60 / 60);
+    text-align: left;
+    margin-left: 117px;
+    margin-bottom: 41px;
+  }
+
+  .cta__slogan {
+    font-size: 20px;
+    line-height: (20 / 20);
+    color: #000000;
+    text-align: right;
+    margin-left: 117px;
+    margin-bottom: 49px;
+  }
+
+  .cta__link {
+    margin-left: 117px;
+  }
+
+  .cta__product-image {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+
+}

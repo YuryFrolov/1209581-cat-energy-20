@@ -253,45 +253,53 @@
       <ul class="extra__list">
 
         <li class="extra__item">
-          <h3 class="extra__name">
-            <a href="catalog/sweetener.html" class="extra__link">Сахарозаменитель</a>
-          </h3>
-          <div class="extra__properties">
-            <span class="extra__property">1 упаковка (100 г)</span>
-            <span class="extra__property">200 Р.</span>
+          <div class="extra__item-header">
+            <h3 class="extra__name">
+              <a href="catalog/sweetener.html" class="extra__link">Сахарозаменитель</a>
+            </h3>
+            <div class="extra__properties">
+              <span class="extra__property">1 упаковка (100 г)</span>
+              <span class="extra__property">200 Р.</span>
+            </div>
           </div>
           <a href="checkout.html" class="extra__order btn">Заказать</a>
         </li>
 
         <li class="extra__item">
-          <h3 class="extra__name">
-            <a href="catalog/drink-water.html" class="extra__link">Питьевая вода</a>
-          </h3>
-          <div class="extra__properties">
-            <span class="extra__property">5 литров</span>
-            <span class="extra__property">50 Р.</span>
+          <div class="extra__item-header">
+            <h3 class="extra__name">
+              <a href="catalog/drink-water.html" class="extra__link">Питьевая вода</a>
+            </h3>
+            <div class="extra__properties">
+              <span class="extra__property">5 литров</span>
+              <span class="extra__property">50 Р.</span>
+            </div>
           </div>
           <a href="checkout.html" class="extra__order btn">Заказать</a>
         </li>
 
         <li class="extra__item">
-          <h3 class="extra__name">
-            <a href="catalog/milk.html" class="extra__link">Молоко</a>
-          </h3>
-          <div class="extra__properties">
-            <span class="extra__property">1 литр</span>
-            <span class="extra__property">100 Р.</span>
+          <div class="extra__item-header">
+            <h3 class="extra__name">
+              <a href="catalog/milk.html" class="extra__link">Молоко</a>
+            </h3>
+            <div class="extra__properties">
+              <span class="extra__property">1 литр</span>
+              <span class="extra__property">100 Р.</span>
+            </div>
           </div>
           <a href="checkout.html" class="extra__order btn">Заказать</a>
         </li>
 
         <li class="extra__item">
-          <h3 class="extra__name">
-            <a href="catalog/vitamins.html" class="extra__link">Витамины</a>
-          </h3>
-          <div class="extra__properties">
-            <span class="extra__property">1 упаковка (30 г)</span>
-            <span class="extra__property">300 Р.</span>
+          <div class="extra__item-header">
+            <h3 class="extra__name">
+              <a href="catalog/vitamins.html" class="extra__link">Витамины</a>
+            </h3>
+            <div class="extra__properties">
+              <span class="extra__property">1 упаковка (30 г)</span>
+              <span class="extra__property">300 Р.</span>
+            </div>
           </div>
           <a href="checkout.html" class="extra__order btn">Заказать</a>
         </li>
@@ -308,7 +316,10 @@
       <div class="contacts-wrapper contacts-wrapper--gray-background">
         <h2 class="contacts__title visually-hidden">Контакты</h2>
         <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts-address-wrapper">
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8</address>
+          <p class="contacts__city">Санкт-Петербург</p>
+        </div>
       </div>
       <img src="img/bg-map-mobile@1x.png" class="contacts__map" alt="">
     </section>
@@ -316,21 +327,30 @@
   </main>
 
   <footer class="footer">
+
     <a class="footer__logo">
       <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="«Кэт Энерджи»">
     </a>
 
-    <ul class="social-links">
-      <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="img/icon-vk.svg" width="20" height="20" alt="Вконтакте"></a>
-      </li>
-      <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="img/icon-insta.svg" width="20" height="20" alt="Инстаграм"></a>
-      </li>
-      <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="img/icon-fb.svg" width="20" height="20" alt="Фейсбук"></a>
-      </li>
-    </ul>
+    <div class="social-links__wrap">
+      <ul class="social-links__list">
+        <li class="social-links__item">
+          <a href="#" class="social-links__link">
+            <img class="social-links__img" src="img/icon-vk.svg" width="20" height="20" alt="Вконтакте">
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a href="#" class="social-links__link">
+            <img class="social-links__img" src="img/icon-insta.svg" width="20" height="20" alt="Инстаграм">
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a href="#" class="social-links__link">
+            <img class="social-links__img" src="img/icon-fb.svg" width="20" height="20" alt="Фейсбук">
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <section class="developers">
       <h2 class="developers__title visually-hidden">Разработчики</h2>
@@ -339,7 +359,9 @@
         <img class="developers__logo" src="img/htmlacademy.svg" width="27" height="34" alt="логотип HTML Academy">
       </a>
     </section>
+
   </footer>
+  
 </body>
 
 </html>
