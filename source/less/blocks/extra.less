@@ -62,22 +62,22 @@
 .extra__gift {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  width: 280px;
-  height: 289px;
+  justify-content: space-between;
+  padding: 50px 0 50px 0;
+  width: 100%;
+  min-height: 289px;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-size: cover;
 }
 
 .extra__gift-logo {
-  margin-top: 65px;
   width: 55px;
 }
 
 .extra__gift-description {
-  margin-top: 0;
-  margin-bottom: 42px;
-  width: 55%;
+  margin: 0;
+  width: 180px;
   font-size: 16px;
   line-height: (20 / 16);
   color: @light;
@@ -87,6 +87,11 @@
 @media (min-width: 768px) {
   .extra {
     padding: 30px;
+  }
+
+  .extra__title {
+    margin-top: 0;
+    margin-bottom: 80px;
   }
 
   .extra__list {
@@ -131,41 +136,34 @@
   .extra__property {
     font-size: 16px;
     line-height: (14 / 16);
+
+    &:nth-child(2) {
+      margin-left: 50px;
+    }
   }
 
   .extra__gift {
-    width: 100%;
-    height: 200px;
+    padding: 57px 124px 69px 87px;
+    min-height: 200px;
     flex-direction: row;
-    justify-content: flex-start;
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
-    background-size: cover;
-  }
-
-  .extra__gift-logo {
-    margin-top: 0;
-    margin-left: 78px;
-    margin-right: 265px;
-  }
-
-  .extra__gift-description {
-    margin: 0;
-    line-height: (20 / 16);
-    max-width: 160px;
-    text-align: left;
   }
 }
 
 @media (min-width: 1440px) {
   .extra {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 0 110px 80px 110px;
+  }
+
+  .extra__products {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .extra__list {
+    margin-bottom: 0;
     border: none;
-    margin-right: 80px;
   }
 
   .extra__item {
@@ -195,9 +193,25 @@
 
   .extra__properties {
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 287px;
+  }
+
+  .extra__property {
+    width: auto;
   }
 
   .extra__order {
-    width: 244px;
+    width: 366px;
+  }
+
+  .extra__gift {
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+    width: 245px;
+    min-height: 289px;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
   }
 }

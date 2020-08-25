@@ -5,10 +5,10 @@
 .nav__item {
   text-align: center;
   border-top: @gray-border;
-}
 
-.nav__item:last-of-type {
-  border-bottom: @gray-border;
+  &:last-of-type {
+    border-bottom: @gray-border;
+  }
 }
 
 .nav__link {
@@ -32,6 +32,10 @@
 
   .nav__item {
     border-top: none;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
   }
 
   .nav__link {
@@ -39,18 +43,18 @@
     padding-bottom: 10px;
     font-size: 18px;
     line-height: (24 / 18);
-  }
 
-  .nav__link:hover {
-    color: #666666;
-  }
+    &:hover {
+      color: #666666;
+    }
 
-  .nav__link:focus {
-    color: #b3b3b3;
-  }
+    &:focus {
+      color: #b3b3b3;
+    }
 
-  .nav__link [href*=""] {
-    border-bottom: 2px solid @basic-green;
+    &--active {
+      border-bottom: 2px solid @basic-green;
+    }
   }
 }
 
