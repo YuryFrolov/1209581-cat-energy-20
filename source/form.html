@@ -32,46 +32,49 @@
     <form action="https://echo.htmlacademy.ru" class="form">
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__description">Заполните анкету и мы подберём<br> программу питания для вашего кота</p>
-      <div class="form__head-wrapper">
-      <fieldset class="form__fieldset form__fieldset--specifications">
-        <div class="form__group form__group--space-between">
-          <label for="name" class="form__label">Имя:*</label>
-          <input type="text" class="form__field" id="name" placeholder="Барсик" required>
-        </div>
-        <div class="form__group form__group--space-between">
-          <label for="weight" class="form__label">Вес (кг):*</label>
-          <input type="text" class="form__field" id="weight" placeholder="7" required>
-        </div>
-        <div class="form__group form__group--space-between">
-          <label for="age" class="form__label">Возраст (лет):</label>
-          <input type="text" class="form__field" id="age" placeholder="7" required>
-        </div>
-      </fieldset>
+      <div class="form__wrapper">
+        <fieldset class="form__fieldset form__fieldset--specifications">
+          <div class="form__group form__group--space-between">
+            <label for="name" class="form__label">Имя:*</label>
+            <input type="text" class="form__field" id="name" placeholder="Барсик" required>
+          </div>
+          <div class="form__group form__group--space-between">
+            <label for="weight" class="form__label">Вес (кг):*</label>
+            <input type="text" class="form__field" id="weight" placeholder="7" required>
+          </div>
+          <div class="form__group form__group--space-between">
+            <label for="age" class="form__label">Возраст (лет):</label>
+            <input type="text" class="form__field" id="age" placeholder="7" required>
+          </div>
+        </fieldset>
 
-      <fieldset class="form__fieldset form__fieldset--program">
-        <div class="form__group">
-          <input type="radio" class="form__radio" name="program" id="slim-program">
-          <label for="slim-program" class="form__label">Похудение</label>
-        </div>
-        <div class="form__group">
-          <input type="radio" class="form__radio" name="program" id="weight-program">
-          <label for="weight-program" class="form__label">Набор массы</label>
-        </div>
-        <div class="form__group">
-          <input type="radio" class="form__radio" name="program" id="advice-program">
-          <label for="advice-program" class="form__label">Не знаю (нужен ваш совет)</label>
-        </div>
-      </fieldset>
+        <fieldset class="form__fieldset form__fieldset--program">
+          <div class="form__group">
+            <input type="radio" class="form__radio" name="program" id="slim-program">
+            <label for="slim-program" class="form__label">Похудение</label>
+          </div>
+          <div class="form__group">
+            <input type="radio" class="form__radio" name="program" id="weight-program">
+            <label for="weight-program" class="form__label">Набор массы</label>
+          </div>
+          <div class="form__group">
+            <input type="radio" class="form__radio" name="program" id="advice-program">
+            <label for="advice-program" class="form__label">Не знаю (нужен ваш совет)</label>
+          </div>
+        </fieldset>
       </div>
-      <fieldset class="form__fieldset">
+
+      <fieldset class="form__fieldset form__fieldset--contacts">
         <h2 class="form__fieldset-title">Контактные данные (владельца кота)</h2>
-        <div class="form__group form__group--space-between">
-          <label for="email" class="form__label">E-mail:*</label>
-          <input type="text" id="email" class="form__field" placeholder="kuklachev@gmail.com" required>
-        </div>
-        <div class="form__group form__group--space-between">
-          <label for="phone" class="form__label">Телефон:*</label>
-          <input type="text" id="phone" class="form__field" placeholder="8 (960) 900-60-90" required>
+        <div class="form__wrapper">
+          <div class="form__group form__group--space-between form__group--contacts">
+            <label for="email" class="form__label">E-mail:*</label>
+            <input type="text" id="email" class="form__field" placeholder="kuklachev@gmail.com" required>
+          </div>
+          <div class="form__group form__group--space-between form__group--contacts">
+            <label for="phone" class="form__label">Телефон:*</label>
+            <input type="text" id="phone" class="form__field" placeholder="8 (960) 900-60-90" required>
+          </div>
         </div>
       </fieldset>
 

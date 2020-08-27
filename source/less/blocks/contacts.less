@@ -36,6 +36,7 @@
 .contacts__map {
   display: block;
   width: 100%;
+  height: 362px;
 }
 
 @media (min-width: 768px) {
@@ -61,12 +62,21 @@
   .contacts__city {
     text-align: right;
   }
+
+  .contacts__map {
+    height: 400px;
+  }
 }
 
 @media (min-width: 1440px) {
   .contacts-wrapper {
     position: absolute;
+    left: 110px;
     background-color: @light;
     padding: 70px 90px 50px 80px;
+  }
+  
+  .contacts__map {
+    height: 400px;
   }
 }

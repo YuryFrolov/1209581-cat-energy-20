@@ -8,7 +8,7 @@
   background-color: @gray;
 }
 
-.categories__item:not(:last-of-type) {
+.categories__item:first-child {
   margin-bottom: 20px;
 }
 
@@ -71,5 +71,22 @@
   .item-link__text {
     font-size: 20px;
     line-height: (20 / 20);
+  }
+}
+
+@media (min-width: 768px) {
+  .categories {
+    padding: 20px 110px 0 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    max-width: 570px;
+    padding-right: 50px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
   }
 }
