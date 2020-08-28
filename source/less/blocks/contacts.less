@@ -1,5 +1,4 @@
 .contacts-wrapper {
-  position: relative;
   display: flex;
   align-items: center;
   padding: 20px;
@@ -69,8 +68,13 @@
 }
 
 @media (min-width: 1440px) {
+  .contacts {
+    position: relative;
+  }
+
   .contacts-wrapper {
     position: absolute;
+    top: 95px;
     left: 110px;
     background-color: @light;
     padding: 70px 90px 50px 80px;
