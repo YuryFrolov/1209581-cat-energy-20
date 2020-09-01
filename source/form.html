@@ -30,6 +30,7 @@
 
   <main class="main">
     <form action="https://echo.htmlacademy.ru" class="form">
+      <div class="form__container container">
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__description">Заполните анкету и мы подберём<br> программу питания для вашего кота</p>
       <div class="form__wrapper">
@@ -105,10 +106,11 @@
         <input class="form__submit btn" type="submit" value="Отправить заявку">
         <p class="form__small-text"><sup>*</sup> — Обязательные поля</p>
       </fieldset>
+    </div>
     </form>
 
     <section class="contacts">
-      <div class="contacts-wrapper contacts-wrapper--gray-background">
+      <div class="contacts__wrapper container container--contacts">
         <h2 class="contacts__title visually-hidden">Контакты</h2>
         <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
         <div class="contacts-address-wrapper">
@@ -118,43 +120,43 @@
       </div>
       <img src="img/bg-map-mobile@1x.png" class="contacts__map" alt="">
     </section>
-
   </main>
 
   <footer class="footer">
-
-    <a class="footer__logo">
-      <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="«Кэт Энерджи»">
-    </a>
-
-    <div class="social-links__wrap">
-      <ul class="social-links__list">
-        <li class="social-links__item">
-          <a href="#" class="social-links__link">
-            <img class="social-links__img" src="img/icon-vk.svg" width="20" height="20" alt="Вконтакте">
-          </a>
-        </li>
-        <li class="social-links__item">
-          <a href="#" class="social-links__link">
-            <img class="social-links__img" src="img/icon-insta.svg" width="20" height="20" alt="Инстаграм">
-          </a>
-        </li>
-        <li class="social-links__item">
-          <a href="#" class="social-links__link">
-            <img class="social-links__img" src="img/icon-fb.svg" width="20" height="20" alt="Фейсбук">
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <section class="developers">
-      <h2 class="developers__title visually-hidden">Разработчики</h2>
-      <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="developers__name">HTML Academy</span>
-        <img class="developers__logo" src="img/htmlacademy.svg" width="27" height="34" alt="логотип HTML Academy">
+    <div class="footer__container container">
+      <a class="footer__logo">
+        <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="«Кэт Энерджи»">
       </a>
-    </section>
 
+      <div class="social-links">
+        <ul class="social-links__list">
+          <li class="social-links__item">
+            <a href="#" class="social-links__link">
+              <img class="social-links__img" src="img/icon-vk.svg" width="20" height="20" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link">
+              <img class="social-links__img" src="img/icon-insta.svg" width="20" height="20" alt="Инстаграм">
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link">
+              <img class="social-links__img" src="img/icon-fb.svg" width="20" height="20" alt="Фейсбук">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="developers">
+        <h2 class="developers__title visually-hidden">Разработчики</h2>
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="developers__name">HTML Academy</span>
+          <img class="developers__logo" src="img/htmlacademy.svg" width="27" height="34" alt="логотип HTML Academy">
+        </a>
+      </section>
+
+    </div>
   </footer>
 
 </body>

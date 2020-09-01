@@ -1,0 +1,20 @@
+.container {
+  width: 280px;
+  border: 1px solid red;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 708px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .container {
+    width: 1220px;
+
+    &--contacts {
+      width: 570px;
+    }
+  }
+}

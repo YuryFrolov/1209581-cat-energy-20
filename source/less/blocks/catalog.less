@@ -14,8 +14,14 @@
 .catalog__item {
   display: flex;
   flex-direction: column;
-  padding: 0 20px 20px 20px;
   border-top: 1px solid @special-gray-2;
+}
+
+.catalog__item .catalog__item-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .catalog__item-wrapper {
@@ -98,6 +104,12 @@
     padding: 0 40px 40px 40px;
     border: none;
 
+    &--more {
+      border: @gray-border;
+      padding: 40px;
+      text-align: center;
+    }
+
     &:not(:last-child) {
       background-color: #f2f2f2;
     }
@@ -134,7 +146,7 @@
 
   .catalog__feature {
     border-bottom: 1px solid #cdcdcd;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
   }
 }
 

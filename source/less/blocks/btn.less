@@ -1,6 +1,6 @@
 .btn {
   display: block;
-  width: 280px;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: @oswald;
@@ -13,22 +13,22 @@
   color: #ffffff;
   background-color: @basic-green;
   border: none;
-}
 
-.more-btn {
-  color: @special_dark-gray;
-  background-color: @gray;
-  width: 100%;
-}
+  &--more-btn {
+    color: @special_dark-gray;
+    background-color: @gray;
+    width: 100%;
+  }
 
-@media (min-width: 768px) {
-  .cta__link-btn {
-    width: 244px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 26px;
-    padding-right: 26px;
-    font-size: 20px;
-    line-height: 1;
+  @media (min-width: 768px) {
+    &--cta-btn {
+      width: 244px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 26px;
+      padding-right: 26px;
+      font-size: 20px;
+      line-height: 1;
+    }
   }
 }

@@ -55,10 +55,18 @@
     &--active {
       border-bottom: 2px solid @basic-green;
     }
+
+    &--active-index {
+      border-bottom: 2px solid #ffffff;
+    }
   }
 }
 
 @media (min-width: 1440px) {
+  .nav--index {
+    color: #ffffff;
+  }
+
   .nav__list {
     min-width: 440px;
   }
@@ -66,5 +74,10 @@
   .nav__link {
     font-size: 20px;
     line-height: 1;
+
+    &--index:visited {
+      color: #ffffff;
+    }
   }
+
 }

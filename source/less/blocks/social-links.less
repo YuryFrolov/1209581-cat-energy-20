@@ -1,0 +1,24 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.social-links__list {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  .list-normalize();
+}
+
+@media (min-width: 768px) {
+  .social-links {
+    padding: 0;
+  }
+
+  .social-links__img {
+    width: 30px;
+    height: 22px;
+  }
+}
