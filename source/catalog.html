@@ -10,7 +10,7 @@
 
 <body>
   <header class="header">
-    <div class="header-wrapper">
+    <div class="header__wrapper">
       <a class="header__logo" href="index.html">
         <img src="img/logo-mobile.svg" class="header__logo-image" width="191" alt="«Кэт Энерджи»">
       </a>
@@ -29,7 +29,7 @@
   </header>
 
   <main class="main">
-    <section class="catalog">
+    <section class="catalog container">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -260,7 +260,9 @@
     </section>
 
     <section class="extra">
-      <h2 class="extra__title">Дополнительные товары</h2>
+      <div class="extra__title-container container">
+        <h2 class="extra__title">Дополнительные товары</h2>
+      </div>
       <div class="extra__products container">
         <ul class="extra__list">
 
@@ -326,7 +328,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts contacts--gray-background">
       <div class="contacts__wrapper container container--contacts">
         <h2 class="contacts__title visually-hidden">Контакты</h2>
         <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>

@@ -10,7 +10,7 @@
 
 <body>
   <header class="header">
-    <div class="header-wrapper">
+    <div class="header__wrapper">
       <a class="header__logo" href="index.html">
         <img src="img/logo-mobile.svg" class="header__logo-image" width="191" alt="«Кэт Энерджи»">
       </a>
@@ -30,10 +30,12 @@
 
   <main class="main">
     <form action="https://echo.htmlacademy.ru" class="form">
-      <div class="form__container container">
-      <h1 class="form__title">Подбор программы</h1>
-      <p class="form__description">Заполните анкету и мы подберём<br> программу питания для вашего кота</p>
-      <div class="form__wrapper">
+      <div class="form__fieldset-wrapper container container--form">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__description">Заполните анкету и мы подберём<br> программу питания для вашего кота</p>
+      </div>
+
+      <div class="form__fieldset-wrapper container container--form">
         <fieldset class="form__fieldset form__fieldset--specifications">
           <div class="form__group form__group--space-between">
             <label for="name" class="form__label">Имя:*</label>
@@ -66,51 +68,60 @@
       </div>
 
       <fieldset class="form__fieldset form__fieldset--contacts">
-        <h2 class="form__fieldset-title">Контактные данные (владельца кота)</h2>
-        <div class="form__wrapper">
-          <div class="form__group form__group--space-between form__group--contacts">
-            <label for="email" class="form__label">E-mail:*</label>
-            <input type="text" id="email" class="form__field" placeholder="kuklachev@gmail.com" required>
-          </div>
-          <div class="form__group form__group--space-between form__group--contacts">
-            <label for="phone" class="form__label">Телефон:*</label>
-            <input type="text" id="phone" class="form__field" placeholder="8 (960) 900-60-90" required>
+        <div class="form__fieldset-wrapper container container--form">
+          <h2 class="form__fieldset-title">Контактные данные (владельца кота)</h2>
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
+            <div class="form__group form__group--space-between form__group--contacts">
+              <label for="email" class="form__label">E-mail:*</label>
+              <input type="text" id="email" class="form__field" placeholder="kuklachev@gmail.com" required>
+            </div>
+            <div class="form__group form__group--space-between form__group--contacts">
+              <label for="phone" class="form__label">Телефон:*</label>
+              <input type="text" id="phone" class="form__field" placeholder="8 (960) 900-60-90" required>
+            </div>
           </div>
         </div>
       </fieldset>
 
       <fieldset class="form__fieldset">
-        <h2 class="form__fieldset-title">Комментарий</h2>
-        <textarea class="form__field textarea-block" name="comment" cols="30" rows="10"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
+        <div class="form__fieldset-wrapper container container--form">
+          <h2 class="form__fieldset-title">Комментарий</h2>
+          <textarea class="form__field textarea-block" name="comment" cols="30" rows="10"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="form__fieldset">
-        <h2 class="form__fieldset-title">Дополнительно</h2>
-        <div class="form__group">
-          <input class="form__checkbox" type="checkbox" id="sweetener">
-          <label class="form__label" for="sweetener">Сахарозаменитель</label>
+        <div class="form__fieldset-wrapper container container--form">
+          <h2 class="form__fieldset-title">Дополнительно</h2>
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--other">
+            <div class="form__group">
+              <input class="form__checkbox" type="checkbox" id="sweetener">
+              <label class="form__label" for="sweetener">Сахарозаменитель</label>
+            </div>
+            <div class="form__group">
+              <input class="form__checkbox" type="checkbox" id="drinking-water">
+              <label class="form__label" for="drinking-water">Питьевая вода</label>
+            </div>
+            <div class="form__group">
+              <input class="form__checkbox" type="checkbox" id="milk">
+              <label class="form__label" for="milk">Молоко</label>
+            </div>
+            <div class="form__group">
+              <input class="form__checkbox" type="checkbox" id="vitamins">
+              <label class="form__label" for="vitamins">Витамины</label>
+            </div>
+          </div>
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--submit">
+            <input class="form__submit btn" type="submit" value="Отправить заявку">
+            <p class="form__small-text"><sup>*</sup> — Обязательные поля</p>
+          </div>
         </div>
-        <div class="form__group">
-          <input class="form__checkbox" type="checkbox" id="drinking-water">
-          <label class="form__label" for="drinking-water">Питьевая вода</label>
-        </div>
-        <div class="form__group">
-          <input class="form__checkbox" type="checkbox" id="milk">
-          <label class="form__label" for="milk">Молоко</label>
-        </div>
-        <div class="form__group">
-          <input class="form__checkbox" type="checkbox" id="vitamins">
-          <label class="form__label" for="vitamins">Витамины</label>
-        </div>
-        <input class="form__submit btn" type="submit" value="Отправить заявку">
-        <p class="form__small-text"><sup>*</sup> — Обязательные поля</p>
       </fieldset>
-    </div>
+      </div>
     </form>
 
-    <section class="contacts">
-      <div class="contacts__wrapper container container--contacts">
+    <section class="contacts contacts--gray-background">
+      <div class="contacts__wrapper container container--contacts container--form-contacts">
         <h2 class="contacts__title visually-hidden">Контакты</h2>
         <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
         <div class="contacts-address-wrapper">
@@ -123,7 +134,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__container container">
+    <div class="footer__container container container--form">
       <a class="footer__logo">
         <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="«Кэт Энерджи»">
       </a>
