@@ -1,14 +1,18 @@
 .cta {
   padding-top: 27px;
   margin-bottom: 22px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: @oswald;
   color: @light;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
   background-size: contain;
   background-position: top center;
+}
+
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .cta__title {
@@ -31,4 +35,61 @@
 
 .cta__link {
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .cta {
+    padding: 0;
+    margin-bottom: 0;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat bottom center;
+    min-height: 810px;
+  }
+
+  .cta__container {
+    align-items: flex-start;
+  }
+
+  .cta__title {
+    width: 414px;
+    color: #000000;
+    font-size: 60px;
+    line-height: (60 / 60);
+    text-align: left;
+    margin-bottom: 41px;
+  }
+
+  .cta__slogan {
+    font-size: 20px;
+    line-height: (20 / 20);
+    color: #000000;
+    text-align: right;
+    margin-bottom: 49px;
+  }
+
+  .cta__product-image {
+    display: none;
+  }
+}
+
+@media (min-width: 1220px) {
+  .cta {
+    padding-top: 200px;
+    min-height: 700px;
+    background: url("../img/index-can-desktop@1x.png") no-repeat, url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background-position: 60% center, right;
+  }
+
+  .cta__title {
+    margin-top: auto;
+    margin-left: 0;
+  }
+
+  .cta__slogan {
+    margin-left: 0;
+  }
+
+  .cta__link {
+    margin-left: 0;
+    margin-bottom: auto;
+  }
 }

@@ -10,7 +10,7 @@
 
 <body>
   <header class="header">
-    <div class="header-wrapper">
+    <div class="header__wrapper">
       <a class="header__logo" href="index.html">
         <img src="img/logo-mobile.svg" class="header__logo-image" width="191" alt="«Кэт Энерджи»">
       </a>
@@ -22,293 +22,320 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
-        <li class="nav__item"><a class="nav__link">Каталог продукции</a></li>
+        <li class="nav__item"><a class="nav__link nav__link--active">Каталог продукции</a></li>
         <li class="nav__item"><a href="form.html" class="nav__link">Подбор программы</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
-    <section class="catalog">
+    <section class="catalog container">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <div class="catalog__item-wrapper">
-            <a href="catalog/cat-energy-pro-chicken-500g.html" class="catalog__img-wrapper">
-              <img class="catalog__image" src="img/chicken-small-mobile@1x.jpg"
-                alt="Кошачий корм «Кэт Энерджи Про» с курицей 500 грамм">
-            </a>
-            <div class="catalog__info">
-              <h2 class="catalog__name">
-                <a href="catalog/cat-energy-pro-chicken-500g.html" class="catalog__link">Cat Energy Pro 500 г</a>
-              </h2>
-              <ul class="catalog__features">
-                <li class="catalog__feature">
-                  <span class="catalog__term">Объём</span>
-                  <span class="catalog__definition">500 г.</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Вкус</span>
-                  <span class="catalog__definition">Курица</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Цена</span>
-                  <span class="catalog__definition">700 р.</span>
-                </li>
-              </ul>
+          <div class="catalog__item-container container">
+            <div class="catalog__item-wrapper">
+              <a href="catalog/cat-energy-pro-chicken-500g.html" class="catalog__img-wrapper">
+                <img class="catalog__image" src="img/chicken-small-mobile@1x.jpg"
+                  alt="Кошачий корм «Кэт Энерджи Про» с курицей 500 грамм">
+              </a>
+              <div class="catalog__info">
+                <h2 class="catalog__name">
+                  <a href="catalog/cat-energy-pro-chicken-500g.html" class="catalog__link">Cat Energy Pro 500 г</a>
+                </h2>
+                <ul class="catalog__features">
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Масса</span>
+                    <span class="catalog__definition">500 г.</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Вкус</span>
+                    <span class="catalog__definition">Курица</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Цена</span>
+                    <span class="catalog__definition">700 р.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <a href="checkout.html" class="catalog__order btn">Заказать</a>
           </div>
-          <a href="checkout.html" class="catalog__order btn">Заказать</a>
         </li>
 
         <li class="catalog__item">
-          <div class="catalog__item-wrapper">
-            <a href="catalog/cat-energy-pro-chicken-1000g.html" class="catalog__img-wrapper">
-              <img class="catalog__image" src="img/chicken-big-mobile@1x.jpg"
-                alt="Кошачий корм «Кэт Энерджи Про» с курицей 1000 грамм">
-            </a>
-            <div class="catalog__info">
-              <h2 class="catalog__name">
-                <a href="catalog/cat-energy-pro-chicken-1000g.html" class="catalog__link">Cat Energy Pro 1000 г</a>
-              </h2>
-              <ul class="catalog__features">
-                <li class="catalog__feature">
-                  <span class="catalog__term">Объём</span>
-                  <span class="catalog__definition">1000 г.</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Вкус</span>
-                  <span class="catalog__definition">Курица</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term"></span>
-                  <span class="catalog__definition"></span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Цена</span>
-                  <span class="catalog__definition">1000 р.</span>
-                </li>
-              </ul>
+          <div class="catalog__item-container container">
+            <div class="catalog__item-wrapper">
+              <a href="catalog/cat-energy-pro-chicken-1000g.html" class="catalog__img-wrapper">
+                <img class="catalog__image" src="img/chicken-big-mobile@1x.jpg"
+                  alt="Кошачий корм «Кэт Энерджи Про» с курицей 1000 грамм">
+              </a>
+              <div class="catalog__info">
+                <h2 class="catalog__name">
+                  <a href="catalog/cat-energy-pro-chicken-1000g.html" class="catalog__link">Cat Energy Pro 1000 г</a>
+                </h2>
+                <ul class="catalog__features">
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Масса</span>
+                    <span class="catalog__definition">1000 г.</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Вкус</span>
+                    <span class="catalog__definition">Курица</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Цена</span>
+                    <span class="catalog__definition">1000 р.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <a href="checkout.html" class="catalog__order btn">Заказать</a>
           </div>
-          <a href="checkout.html" class="catalog__order btn">Заказать</a>
         </li>
 
         <li class="catalog__item">
-          <div class="catalog__item-wrapper">
-            <a href="catalog/cat-energy-pro-fish-500g.html" class="catalog__img-wrapper">
-              <img class="catalog__image" src="img/fish-small-mobile@1x.jpg"
-                alt="Кошачий корм «Кэт Энерджи Про» с рыбой 500 грамм">
-            </a>
-            <div class="catalog__info">
-              <h2 class="catalog__name">
-                <a href="catalog/cat-energy-pro-fish-500g.html" class="catalog__link">Cat Energy Pro 500 г</a>
-              </h2>
-              <ul class="catalog__features">
-                <li class="catalog__feature">
-                  <span class="catalog__term">Объём</span>
-                  <span class="catalog__definition">500 г.</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Вкус</span>
-                  <span class="catalog__definition">Рыба</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Цена</span>
-                  <span class="catalog__definition">700 р.</span>
-                </li>
-              </ul>
+          <div class="catalog__item-container container">
+            <div class="catalog__item-wrapper">
+              <a href="catalog/cat-energy-pro-fish-500g.html" class="catalog__img-wrapper">
+                <img class="catalog__image" src="img/fish-small-mobile@1x.jpg"
+                  alt="Кошачий корм «Кэт Энерджи Про» с рыбой 500 грамм">
+              </a>
+              <div class="catalog__info">
+                <h2 class="catalog__name">
+                  <a href="catalog/cat-energy-pro-fish-500g.html" class="catalog__link">Cat Energy Pro 500 г</a>
+                </h2>
+                <ul class="catalog__features">
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Масса</span>
+                    <span class="catalog__definition">500 г.</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Вкус</span>
+                    <span class="catalog__definition">Рыба</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Цена</span>
+                    <span class="catalog__definition">700 р.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <a href="checkout.html" class="catalog__order btn">Заказать</a>
           </div>
-          <a href="checkout.html" class="catalog__order btn">Заказать</a>
         </li>
 
         <li class="catalog__item">
-          <div class="catalog__item-wrapper">
-            <a href="catalog/cat-energy-pro-fish-1000g.html" class="catalog__img-wrapper">
-              <img class="catalog__image" src="img/fish-big-mobile@1x.jpg"
-                alt="Кошачий корм «Кэт Энерджи Про» с рыбой 1000 грамм">
-            </a>
-            <div class="catalog__info">
-              <h2 class="catalog__name">
-                <a href="catalog/cat-energy-pro-fish-1000g.html" class="catalog__link">Cat Energy Pro 1000 г</a>
-              </h2>
-              <ul class="catalog__features">
-                <li class="catalog__feature">
-                  <span class="catalog__term">Объём</span>
-                  <span class="catalog__definition">1000 г.</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Вкус</span>
-                  <span class="catalog__definition">Рыба</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Цена</span>
-                  <span class="catalog__definition">1000 р.</span>
-                </li>
-              </ul>
+          <div class="catalog__item-container container">
+            <div class="catalog__item-wrapper">
+              <a href="catalog/cat-energy-pro-fish-1000g.html" class="catalog__img-wrapper">
+                <img class="catalog__image" src="img/fish-big-mobile@1x.jpg"
+                  alt="Кошачий корм «Кэт Энерджи Про» с рыбой 1000 грамм">
+              </a>
+              <div class="catalog__info">
+                <h2 class="catalog__name">
+                  <a href="catalog/cat-energy-pro-fish-1000g.html" class="catalog__link">Cat Energy Pro 1000 г</a>
+                </h2>
+                <ul class="catalog__features">
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Масса</span>
+                    <span class="catalog__definition">1000 г.</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Вкус</span>
+                    <span class="catalog__definition">Рыба</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Цена</span>
+                    <span class="catalog__definition">1000 р.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <a href="checkout.html" class="catalog__order btn">Заказать</a>
           </div>
-          <a href="checkout.html" class="catalog__order btn">Заказать</a>
         </li>
 
         <li class="catalog__item">
-          <div class="catalog__item-wrapper">
-            <a href="catalog/cat-energy-slim-buckwheat-500g.html" class="catalog__img-wrapper">
-              <img class="catalog__image" src="img/buckwheat-small-mobile@1x.jpg"
-                alt="Кошачий корм «Кэт Энерджи Слим» с гречкой 500 грамм">
-            </a>
-            <div class="catalog__info">
-              <h2 class="catalog__name">
-                <a href="catalog/cat-energy-slim-buckwheat-500g.html" class="catalog__link">Cat Energy Slim 500 г</a>
-              </h2>
-              <ul class="catalog__features">
-                <li class="catalog__feature">
-                  <span class="catalog__term">Объём</span>
-                  <span class="catalog__definition">500 г.</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Вкус</span>
-                  <span class="catalog__definition">Гречка</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Цена</span>
-                  <span class="catalog__definition">400 р.</span>
-                </li>
-              </ul>
+          <div class="catalog__item-container container">
+            <div class="catalog__item-wrapper">
+              <a href="catalog/cat-energy-slim-buckwheat-500g.html" class="catalog__img-wrapper">
+                <img class="catalog__image" src="img/buckwheat-small-mobile@1x.jpg"
+                  alt="Кошачий корм «Кэт Энерджи Слим» с гречкой 500 грамм">
+              </a>
+              <div class="catalog__info">
+                <h2 class="catalog__name">
+                  <a href="catalog/cat-energy-slim-buckwheat-500g.html" class="catalog__link">Cat Energy Slim 500 г</a>
+                </h2>
+                <ul class="catalog__features">
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Масса</span>
+                    <span class="catalog__definition">500 г.</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Вкус</span>
+                    <span class="catalog__definition">Гречка</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Цена</span>
+                    <span class="catalog__definition">400 р.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <a href="checkout.html" class="catalog__order btn">Заказать</a>
           </div>
-          <a href="checkout.html" class="catalog__order btn">Заказать</a>
         </li>
 
         <li class="catalog__item">
-          <div class="catalog__item-wrapper">
-            <a href="catalog/cat-energy-slim-buckweat-1000g.html" class="catalog__img-wrapper">
-              <img class="catalog__image" src="img/buckwheat-big-mobile@1x.jpg"
-                alt="Кошачий корм «Кэт Энерджи Слим» с гречкой 1000 грамм">
-            </a>
-            <div class="catalog__info">
-              <h2 class="catalog__name">
-                <a href="catalog/cat-energy-slim-buckweat-1000g.html" class="catalog__link">Cat Energy Slim 1000 г</a>
-              </h2>
-              <ul class="catalog__features">
-                <li class="catalog__feature">
-                  <span class="catalog__term">Объём</span>
-                  <span class="catalog__definition">1000 г.</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Вкус</span>
-                  <span class="catalog__definition">Гречка</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Цена</span>
-                  <span class="catalog__definition">700 р.</span>
-                </li>
-              </ul>
+          <div class="catalog__item-container container">
+            <div class="catalog__item-wrapper">
+              <a href="catalog/cat-energy-slim-buckweat-1000g.html" class="catalog__img-wrapper">
+                <img class="catalog__image" src="img/buckwheat-big-mobile@1x.jpg"
+                  alt="Кошачий корм «Кэт Энерджи Слим» с гречкой 1000 грамм">
+              </a>
+              <div class="catalog__info">
+                <h2 class="catalog__name">
+                  <a href="catalog/cat-energy-slim-buckweat-1000g.html" class="catalog__link">Cat Energy Slim 1000 г</a>
+                </h2>
+                <ul class="catalog__features">
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Масса</span>
+                    <span class="catalog__definition">1000 г.</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Вкус</span>
+                    <span class="catalog__definition">Гречка</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Цена</span>
+                    <span class="catalog__definition">700 р.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <a href="checkout.html" class="catalog__order btn">Заказать</a>
           </div>
-          <a href="checkout.html" class="catalog__btn-order btn">Заказать</a>
         </li>
 
         <li class="catalog__item">
-          <div class="catalog__item-wrapper">
-            <a href="catalog/cat-energy-slim-rice-500g.html" class="catalog__img-wrapper">
-              <img class="catalog__image" src="img/rice-small-mobile@1x.jpg"
-                alt="Кошачий корм «Кэт Энерджи Слим» с рисом 500 грамм">
-            </a>
-            <div class="catalog__info">
-              <h2 class="catalog__name">
-                <a href="catalog/cat-energy-slim-rice-500g.html" class="catalog__link">Cat Energy Slim 500 г</a>
-              </h2>
-              <ul class="catalog__features">
-                <li class="catalog__feature">
-                  <span class="catalog__term">Объём</span>
-                  <span class="catalog__definition">500 г.</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Вкус</span>
-                  <span class="catalog__definition">Рис</span>
-                </li>
-                <li class="catalog__feature">
-                  <span class="catalog__term">Цена</span>
-                  <span class="catalog__definition">500 р.</span>
-                </li>
-              </ul>
+          <div class="catalog__item-container container">
+            <div class="catalog__item-wrapper">
+              <a href="catalog/cat-energy-slim-rice-500g.html" class="catalog__img-wrapper">
+                <img class="catalog__image" src="img/rice-small-mobile@1x.jpg"
+                  alt="Кошачий корм «Кэт Энерджи Слим» с рисом 500 грамм">
+              </a>
+              <div class="catalog__info">
+                <h2 class="catalog__name">
+                  <a href="catalog/cat-energy-slim-rice-500g.html" class="catalog__link">Cat Energy Slim 500 г</a>
+                </h2>
+                <ul class="catalog__features">
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Масса</span>
+                    <span class="catalog__definition">500 г.</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Вкус</span>
+                    <span class="catalog__definition">Рис</span>
+                  </li>
+                  <li class="catalog__feature">
+                    <span class="catalog__term">Цена</span>
+                    <span class="catalog__definition">500 р.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <a href="checkout.html" class="catalog__order btn">Заказать</a>
           </div>
-          <a href="checkout.html" class="catalog__order btn">Заказать</a>
+        </li>
+        <li class="catalog__item catalog__item--more">
+          <div class="catalog__item-container container">
+            <img src="img/icon-plus-mobile.svg" class="more__image" width="30" alt="">
+            <h2 class="more__title">Показать ещё 100500 товаров</h2>
+            <p class="more__slogan">На самом деле вкусов гораздо больше!</p>
+            <a href="new-goods.html" class="more__link btn btn--more-btn">Показать все</a>
+          </div>
         </li>
       </ul>
-    </section>
-
-    <section class="more">
-      <img src="img/icon-plus-mobile.svg" class="more__image" width="30" alt="">
-      <h2 class="more__title">Показать ещё 100500 товаров</h2>
-      <p class="more__slogan">На самом деле вкусов гораздо больше!</p>
-      <a href="new-goods.html" class="more__link btn more-btn">Показать все</a>
     </section>
 
     <section class="extra">
-      <h2 class="extra__title">Дополнительные товары</h2>
-      <ul class="extra__list">
+      <div class="extra__title-container container">
+        <h2 class="extra__title">Дополнительные товары</h2>
+      </div>
+      <div class="extra__products container">
+        <ul class="extra__list">
 
-        <li class="extra__item">
-          <h3 class="extra__name">
-            <a href="catalog/sweetener.html" class="extra__link">Сахарозаменитель</a>
-          </h3>
-          <div class="extra__properties">
-            <span class="extra__property">1 упаковка (100 г)</span>
-            <span class="extra__property">200 Р.</span>
-          </div>
-          <a href="checkout.html" class="extra__order btn">Заказать</a>
-        </li>
+          <li class="extra__item">
+            <div class="extra__item-header">
+              <h3 class="extra__name">
+                <a href="catalog/sweetener.html" class="extra__link">Сахарозаменитель</a>
+              </h3>
+              <div class="extra__properties">
+                <span class="extra__property">1 упаковка (100 г)</span>
+                <span class="extra__property">200 Р.</span>
+              </div>
+            </div>
+            <a href="checkout.html" class="extra__order btn">Заказать</a>
+          </li>
 
-        <li class="extra__item">
-          <h3 class="extra__name">
-            <a href="catalog/drink-water.html" class="extra__link">Питьевая вода</a>
-          </h3>
-          <div class="extra__properties">
-            <span class="extra__property">5 литров</span>
-            <span class="extra__property">50 Р.</span>
-          </div>
-          <a href="checkout.html" class="extra__order btn">Заказать</a>
-        </li>
+          <li class="extra__item">
+            <div class="extra__item-header">
+              <h3 class="extra__name">
+                <a href="catalog/drink-water.html" class="extra__link">Питьевая вода</a>
+              </h3>
+              <div class="extra__properties">
+                <span class="extra__property">5 литров</span>
+                <span class="extra__property">50 Р.</span>
+              </div>
+            </div>
+            <a href="checkout.html" class="extra__order btn">Заказать</a>
+          </li>
 
-        <li class="extra__item">
-          <h3 class="extra__name">
-            <a href="catalog/milk.html" class="extra__link">Молоко</a>
-          </h3>
-          <div class="extra__properties">
-            <span class="extra__property">1 литр</span>
-            <span class="extra__property">100 Р.</span>
-          </div>
-          <a href="checkout.html" class="extra__order btn">Заказать</a>
-        </li>
+          <li class="extra__item">
+            <div class="extra__item-header">
+              <h3 class="extra__name">
+                <a href="catalog/milk.html" class="extra__link">Молоко</a>
+              </h3>
+              <div class="extra__properties">
+                <span class="extra__property">1 литр</span>
+                <span class="extra__property">100 Р.</span>
+              </div>
+            </div>
+            <a href="checkout.html" class="extra__order btn">Заказать</a>
+          </li>
 
-        <li class="extra__item">
-          <h3 class="extra__name">
-            <a href="catalog/vitamins.html" class="extra__link">Витамины</a>
-          </h3>
-          <div class="extra__properties">
-            <span class="extra__property">1 упаковка (30 г)</span>
-            <span class="extra__property">300 Р.</span>
-          </div>
-          <a href="checkout.html" class="extra__order btn">Заказать</a>
-        </li>
+          <li class="extra__item">
+            <div class="extra__item-header">
+              <h3 class="extra__name">
+                <a href="catalog/vitamins.html" class="extra__link">Витамины</a>
+              </h3>
+              <div class="extra__properties">
+                <span class="extra__property">1 упаковка (30 г)</span>
+                <span class="extra__property">300 Р.</span>
+              </div>
+            </div>
+            <a href="checkout.html" class="extra__order btn">Заказать</a>
+          </li>
 
-      </ul>
+        </ul>
 
-      <div class="extra__gift">
-        <img src="img/icon-gift.svg" class="extra__gift-logo" alt="подарок">
-        <p class="extra__gift-description">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="extra__gift">
+          <img src="img/icon-gift.svg" class="extra__gift-logo" alt="подарок">
+          <p class="extra__gift-description">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
+
       </div>
     </section>
 
-    <section class="contacts">
-      <div class="contacts-wrapper contacts-wrapper--gray-background">
+    <section class="contacts contacts--gray-background">
+      <div class="contacts__wrapper container container--contacts">
         <h2 class="contacts__title visually-hidden">Контакты</h2>
         <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts-address-wrapper">
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8</address>
+          <p class="contacts__city">Санкт-Петербург</p>
+        </div>
       </div>
       <img src="img/bg-map-mobile@1x.png" class="contacts__map" alt="">
     </section>
@@ -316,29 +343,40 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__logo">
-      <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="«Кэт Энерджи»">
-    </a>
-
-    <ul class="social-links">
-      <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="img/icon-vk.svg" width="20" height="20" alt="Вконтакте"></a>
-      </li>
-      <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="img/icon-insta.svg" width="20" height="20" alt="Инстаграм"></a>
-      </li>
-      <li class="social-links__item">
-        <a href="#" class="social-links__link"><img src="img/icon-fb.svg" width="20" height="20" alt="Фейсбук"></a>
-      </li>
-    </ul>
-
-    <section class="developers">
-      <h2 class="developers__title visually-hidden">Разработчики</h2>
-      <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="developers__name">HTML Academy</span>
-        <img class="developers__logo" src="img/htmlacademy.svg" width="27" height="34" alt="логотип HTML Academy">
+    <div class="footer__container container">
+      <a class="footer__logo">
+        <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="«Кэт Энерджи»">
       </a>
-    </section>
+
+      <div class="social-links">
+        <ul class="social-links__list">
+          <li class="social-links__item">
+            <a href="#" class="social-links__link">
+              <img class="social-links__img" src="img/icon-vk.svg" width="20" height="20" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link">
+              <img class="social-links__img" src="img/icon-insta.svg" width="20" height="20" alt="Инстаграм">
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-links__link">
+              <img class="social-links__img" src="img/icon-fb.svg" width="20" height="20" alt="Фейсбук">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="developers">
+        <h2 class="developers__title visually-hidden">Разработчики</h2>
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="developers__name">HTML Academy</span>
+          <img class="developers__logo" src="img/htmlacademy.svg" width="27" height="34" alt="логотип HTML Academy">
+        </a>
+      </section>
+
+    </div>
   </footer>
 </body>
 

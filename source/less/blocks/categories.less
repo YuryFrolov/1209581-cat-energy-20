@@ -2,54 +2,32 @@
   .list-normalize();
 }
 
+.categories__container {
+  margin: 0 auto;
+}
+
 .categories__item {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   padding: 20px;
   background-color: @gray;
 }
 
-.categories__item-title {
-  position: relative;
-  margin: 0;
+.categories__item:first-child {
+  margin-bottom: 20px;
+}
+
+.categories__item-header {
   display: flex;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+}
+
+.categories__item-title {
+  margin: 0;
   font-family: @oswald;
   font-size: 24px;
   line-height: (37 / 24);
   font-weight: 400;
   text-transform: uppercase;
-
-  &::before {
-    content: "";
-    margin-right: 20px;
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-color: #68b738;
-    border-radius: 50%;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 67px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-
-  &--slim::after {
-    background-image: url("../img/icon-cat-slim.svg");
-    transform: translateX(-5px) translateY(-5px);
-  }
-
-  &--pro::after {
-    background-image: url("../img/icon-cat-pro.svg");
-    transform: translateX(-8px);
-  }
 }
 
 .categories__item-description {
@@ -74,4 +52,49 @@
   line-height: (16 / 16);
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .categories__item {
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+
+  .categories__item-title {
+    font-size: 36px;
+    line-height: (36 / 36);
+    margin-bottom: 24px;
+  }
+
+  .categories__item-description {
+    font-size: 16px;
+    line-height: (24 / 16);
+    border-bottom: none;
+  }
+
+  .item-link__text {
+    font-size: 20px;
+    line-height: (20 / 20);
+  }
+}
+
+@media (min-width: 1220px) {
+  .categories {
+    padding-top: 80px;
+  }
+
+  .categories__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    max-width: 570px;
+    padding-right: 50px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
 }

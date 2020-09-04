@@ -1,7 +1,6 @@
 .extra {
-  padding: 20px;
+  border-top: @gray-border;
 }
-
 
 .extra__title {
   font-family: @oswald;
@@ -9,6 +8,11 @@
   line-height: (24 / 24);
   font-weight: 400;
   color: #000000;
+  margin-top: 0;
+}
+
+.extra__products {
+  margin: 0 auto;
 }
 
 .extra__list {
@@ -56,27 +60,155 @@
   text-align: right;
 }
 
+.extra__order {
+  width: 100%;
+}
+
 .extra__gift {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  width: 280px;
-  height: 289px;
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  justify-content: space-between;
+  padding: 50px 0 50px 0;
+  width: 100%;
+  min-height: 289px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-size: cover;
 }
 
 .extra__gift-logo {
-  margin-top: 65px;
   width: 55px;
 }
 
 .extra__gift-description {
-  margin-top: 0;
-  margin-bottom: 42px;
-  width: 55%;
+  margin: 0;
+  width: 180px;
   font-size: 16px;
   line-height: (20 / 16);
   color: @light;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .extra__title {
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: (36 / 36);
+  }
+
+  .extra__list {
+    border: @gray-border;
+  }
+
+  .extra__item {
+    padding: 38px;
+  }
+
+  .extra__item:first-child {
+    border-top: none;
+  }
+
+  .extra__item:last-child {
+    border-bottom: none;
+  }
+
+  .extra__item-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .extra__name {
+    margin-right: auto;
+  }
+
+  .extra__link {
+    font-size: 20px;
+    line-height: (20 / 20);
+  }
+
+  .extra__properties {
+    display: block;
+  }
+
+  .extra__property {
+    font-size: 16px;
+    line-height: (14 / 16);
+
+    &:nth-child(2) {
+      margin-left: 50px;
+    }
+  }
+
+  .extra__gift {
+    padding: 57px 124px 69px 87px;
+    min-height: 200px;
+    flex-direction: row;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: 1440px) {
+  .extra {
+    padding: 30px 110px 80px 110px;
+  }
+
+  .extra__products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .extra__list {
+    margin-bottom: 0;
+    border: none;
+  }
+
+  .extra__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px 0;
+
+    &:first-child {
+      border-top: @gray-border;
+    }
+
+    &:last-child {
+      border-bottom: @gray-border;
+    }
+  }
+
+  .extra__item-header {
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 40px;
+  }
+
+  .extra__name {
+    margin: 0;
+  }
+
+  .extra__properties {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 287px;
+  }
+
+  .extra__property {
+    width: auto;
+  }
+
+  .extra__order {
+    width: 366px;
+  }
+
+  .extra__gift {
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+    width: 245px;
+    min-height: 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
 }
