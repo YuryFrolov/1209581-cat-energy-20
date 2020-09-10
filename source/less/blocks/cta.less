@@ -75,8 +75,34 @@
   .cta {
     padding-top: 200px;
     min-height: 700px;
-    background: url("../img/index-can-desktop@1x.png") no-repeat, url("../img/index-background-desktop@1x.jpg") no-repeat;
-    background-position: 60% center, right;
+    background: url("../img/index-can-desktop@1x.png") no-repeat;
+    background-position: 50% center;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      content: "";
+      background-color: @basic-green;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      height: 100%;
+      background-image: url(../img/index-background-desktop@1x.jpg);
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: auto 100%;
+      z-index: -1;
+    }
   }
 
   .cta__title {
@@ -93,3 +119,4 @@
     margin-bottom: auto;
   }
 }
+
