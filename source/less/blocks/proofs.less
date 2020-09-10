@@ -1,7 +1,5 @@
 .proofs {
   padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: @gray;
 }
 
@@ -26,6 +24,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.proofs__numbers-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .proofs__numbers {
@@ -80,6 +84,10 @@
     background-color: #ffffff;
   }
 
+  .proofs__col:first-of-type {
+    margin-bottom: 250px;
+  }
+
   .proofs__title {
     font-size: 60px;
     line-height: (60 / 60);
@@ -119,5 +127,55 @@
     align-items: flex-end;
     font-size: 20px;
     line-height: (20 / 20);
+  }
+}
+
+@media (min-width: 1220px) {
+  .proofs__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .proofs__title {
+    width: 100%;
+  }
+
+  .proofs__col {
+    width: 50%;
+    min-height: 462px;
+
+    &:first-of-type {
+      margin-bottom: 0;
+      padding: 70px 0 70px 0;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  .proofs__history {
+    width: 436px;
+    margin: 0;
+  }
+
+  .proofs__wrap {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .proofs__numbers-wrap {
+    width: 366px;
+  }
+
+  .proofs__description {
+    background-color: #f2f2f2;
+  }
+
+  .proofs__result {
+    margin-top: 55px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
