@@ -35,8 +35,10 @@
       <div class="cta__container container">
         <h2 class="cta__title">Функциональное питание для котов</h2>
         <p class="cta__slogan">Занялся собой? Займись котом!</p>
-        <img class="cta__product-image" src="img/index-can-mobile@1x.png" width="280" height="270"
-          alt="Кошачий корм «Кэт Энерджи»">
+        <div class="cta__product-container">
+          <img class="cta__product-image" src="img/index-can-mobile@1x.png" width="280" height="270"
+            alt="Кошачий корм «Кэт Энерджи»">
+        </div>
         <a class="cta__link btn btn--cta-btn" href="form.html">Подобрать программу</a>
       </div>
     </header>
@@ -45,9 +47,9 @@
       <div class="categories__container container">
         <li class="categories__item">
           <div class="categories__item-header">
-            <!--           <div class="categories__item-imagebox">
-            <img src="img/icon-cat-slim.svg" class="categories__item-image" alt="">
-          </div> -->
+            <div class="categories__item-imagebox categories__item-imagebox--slim">
+              <img src="img/icon-cat-slim.svg" class="categories__item-image" alt="">
+            </div>
             <h2 class="categories__item-title categories__item-title--slim">Похудение</h2>
           </div>
           <p class="categories__item-description">Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -59,9 +61,9 @@
         </li>
         <li class="categories__item">
           <div class="categories__item-header">
-            <!--           <div class="categories__item-imagebox">
-            <img src="img/icon-cat-pro.svg" class="categories__item-image" alt="">
-          </div> -->
+            <div class="categories__item-imagebox categories__item-imagebox--pro">
+              <img src="img/icon-cat-pro.svg" class="categories__item-image" alt="">
+            </div>
             <h2 class="categories__item-title categories__item-title--pro">Набор массы</h2>
           </div>
           <p class="categories__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -79,6 +81,7 @@
       <div class="advantages__container container">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
+
           <li class="advantages__item">
             <div class="advantages__item-square">
               <img src="img/advantage-leaf@1x.png" class="advantages__item-icon" alt="">
@@ -87,6 +90,7 @@
               вещества.
             </p>
           </li>
+
           <li class="advantages__item">
             <div class="advantages__item-square">
               <img src="img/advantage-powder@1x.png" class="advantages__item-icon" alt="">
@@ -95,6 +99,7 @@
               готово.
             </p>
           </li>
+
           <li class="advantages__item">
             <div class="advantages__item-square">
               <img src="img/advantage-dining@1x.png" class="advantages__item-icon" alt="">
@@ -102,6 +107,7 @@
             <p class="advantages__item-description">Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
+
           <li class="advantages__item">
             <div class="advantages__item-square">
               <img src="img/advantage-clock@1x.png" class="advantages__item-icon" alt="">
@@ -109,43 +115,56 @@
             <p class="advantages__item-description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
           </li>
+
         </ul>
       </div>
     </section>
 
     <section class="proofs">
-      <h2 class="proofs__title">Живой пример</h2>
-      <p class="proofs__history">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в день. </p>
-      <div class="proofs__wrap">
-        <div class="proofs__numbers">
-          <span class="proofs__number">5 кг</span>
-          <span class="proofs__description">снижение веса</span>
+      <div class="proofs__container container">
+        <h2 class="proofs__title">Живой пример</h2>
+        <div class="proofs__col">
+          <p class="proofs__history">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов
+            в день. </p>
+          <div class="proofs__wrap">
+            <div class="proofs__numbers-wrap">
+              <div class="proofs__numbers">
+                <span class="proofs__number">5 кг</span>
+                <span class="proofs__description">снижение веса</span>
+              </div>
+              <div class="proofs__numbers">
+                <span class="proofs__number">60 дней</span>
+                <span class="proofs__description">затрачено времени</span>
+              </div>
+            </div>
+            <div class="proofs__result">
+              <span class="proofs__result-description">Затраты на питание:</span>
+              <span class="proofs__result-price"> 15 000 руб.</span>
+            </div>
+          </div>
         </div>
-        <div class="proofs__numbers">
-          <span class="proofs__number">60 дней</span>
-          <span class="proofs__description">затрачено времени</span>
-        </div>
-        <div class="proofs__result">
-          <span class="proofs__result-description">Затраты на питание:</span>
-          <span class="proofs__result-price"> 15 000 руб.</span>
-        </div>
-      </div>
-    </section>
 
-    <section class="result">
-      <h2 class="result__title visually-hidden">Результат</h2>
-      <div class="result__image-wrap">
-        <img class="result__image result__image--before" src="img/before-mobile@1x.png" alt="Кот до похудения">
-        <img class="result__image result__image--after" src="img/after-mobile@1x.png" alt="Кот после похудения">
-      </div>
-      <div class="result__buttons-wrap">
-        <button type="button" class="result__button">Было</button>
-        <div class="result__toggle-wrap">
-          <div class="result__toggle"></div>
+        <div class="proofs__col result">
+          <h2 class="result__title visually-hidden">Результат</h2>
+          <div class="result__images-wrap">
+            <div class="result__image-wrap">
+              <img class="result__image result__image--before" src="img/before-mobile@1x.png" alt="Кот до похудения">
+            </div>
+            <div class="result__image-wrap">
+              <img class="result__image result__image--after" src="img/after-mobile@1x.png" alt="Кот после похудения">
+            </div>
+          </div>
+          <div class="result__buttons-wrap">
+            <button type="button" class="result__button">Было</button>
+            <div class="result__toggle-wrap">
+              <div class="result__toggle"></div>
+            </div>
+            <button type="button" class="result__button">Стало</button>
+          </div>
         </div>
-        <button type="button" class="result__button">Стало</button>
       </div>
     </section>
 
