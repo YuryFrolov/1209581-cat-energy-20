@@ -12,7 +12,11 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
-        <img src="img/logo-mobile.svg" class="header__logo-image" width="191" alt="«Кэт Энерджи»">
+        <picture>
+          <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" class="header__logo-image" width="191" alt="«Кэт Энерджи»">
+        </picture>
       </a>
       <button type="button" class="header__toggle-nav-btn">
         <span class="visually-hidden">Переключить меню</span>
@@ -120,8 +124,8 @@
       </div>
     </form>
 
-    <section class="contacts contacts--gray-background">
-      <div class="contacts__wrapper container container--contacts container--form-contacts">
+    <section class="contacts">
+      <div class="contacts__wrapper container container--contacts">
         <h2 class="contacts__title visually-hidden">Контакты</h2>
         <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
         <div class="contacts-address-wrapper">
@@ -129,8 +133,16 @@
           <p class="contacts__city">Санкт-Петербург</p>
         </div>
       </div>
-      <img src="img/bg-map-mobile@1x.png" class="contacts__map" alt="">
+      <div class="contacts__map-wrapper">
+        <picture>
+          <source media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.png 2x" class="contacts__map" alt="">
+        </picture>
+        <img src="img/map-pin.png" class="contacts__pin" alt="">
+      </div>
     </section>
+
   </main>
 
   <footer class="footer">
